@@ -53,9 +53,9 @@ export default function Projects() {
             <p className={styles.cardProjectsDesc}>{el.description || "No description provided."}</p>
 
             <div className={styles.cardProjectsLinks}>
-              <a href={el.code} target="_blank"><Github className={styles.icon} />Code</a>
+              <a href={el.code} target="_blank" rel="noopener noreferrer"><Github className={styles.icon} />Code</a>
               {el.homepage && (
-                <a href={el.homepage} target="_blank"><ExternalLink className={styles.icon} />Demo</a>
+                <a href={el.homepage} target="_blank" rel="noopener noreferrer"><ExternalLink className={styles.icon} />Demo</a>
               )}
             </div>
           </div>

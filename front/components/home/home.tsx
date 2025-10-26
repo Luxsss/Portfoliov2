@@ -30,12 +30,12 @@ export default function Home() {
 
         <div className={styles.actions}>
           <a href="#projects" className={styles.buttonPrimary}>See My Work</a>
-          <a href="/download/CvAlexisBrunCom.pdf" target="_blank" download className={styles.buttonSecondary}>Download CV</a>
+          <a href="/download/CvAlexisBrunCom.pdf" target="_blank" rel="noopener noreferrer" download className={styles.buttonSecondary}>Download CV</a>
         </div>
 
         <div className={styles.socialLinks}>
           {socialLinks.map((social) => (
-            <a key={social.label} href={social.href} target="_blank"><social.icon className={styles.socialIcon} /></a>
+            <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer"><social.icon className={styles.socialIcon} /></a>
           ))}
         </div>
       </div>
