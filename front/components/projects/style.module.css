@@ -1,0 +1,150 @@
+.containerProjects {
+  min-height: 100vh;
+  background-color: #F9F9F4;
+  padding: 5vh 5vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1b897b;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  color: #606060;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cardProjects {
+  background-color: #FCFCFB;
+  border-radius: 15px;
+  border: 1px solid #D8D8D0;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cardProjects:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: rgb(27, 137, 123);
+}
+
+.cardProjectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardProjectsTitle {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cardProjectsTitle:hover {
+  color: rgb(27, 137, 123);
+}
+
+.cardProjectsLanguage {
+  background-color: rgba(27, 137, 123, 0.1);
+  color: rgb(27, 137, 123);
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cardProjectsDesc {
+  font-size: 0.95rem;
+  color: #606060;
+  margin-bottom: 1rem;
+  min-height: 50px;
+  border-bottom: 1px solid #D8D8D0;
+}
+
+.cardProjectsLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cardProjectsLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cardProjectsLinks a:hover {
+  color: rgb(27, 137, 123);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 767px) {
+  .cardProjects {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .cardProjectsTitle {
+    font-size: 1rem;
+  }
+
+  .cardProjectsDesc {
+    font-size: 0.85rem;
+  }
+
+  .cardProjectsLinks a {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,123 @@
+.containerContact {
+  min-height: 100vh;
+  background-color: #F9F9F4;
+  padding: 5vh 5vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1b897b;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.subtitleMore {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  color: #606060;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.infoCard, .formCard {
+  background-color: #FCFCFB;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #D8D8D0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3vh;  
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  transition: transform 0.2s ease;
+  border: 1px solid #D8D8D0;
+  border-radius: 5px;
+}
+
+.icon:hover {
+  background-color: rgba(27, 137, 123, 0.3);
+  border: 1px solid rgb(27, 137, 123);
+}
+
+.formCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formCard form input,
+.formCard form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #D8D8D0;
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.formCard form input:focus,
+.formCard form textarea:focus {
+  border-color: #1b897b;
+  outline: none;
+}
+
+.formCard form button {
+  background-color: #1b897b;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formCard form button:hover {
+  background-color: #159a82;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCard, .formCard {
+    padding: 1.5rem;
+  }
+}
