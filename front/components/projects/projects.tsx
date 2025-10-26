@@ -7,7 +7,7 @@ interface Repository {
   id: number
   name: string
   description: string | null
-  code: string
+  html_url: string
   homepage: string | null
   language: string | null
 }
@@ -53,7 +53,7 @@ export default function Projects() {
             <p className={styles.cardProjectsDesc}>{el.description || "No description provided."}</p>
 
             <div className={styles.cardProjectsLinks}>
-              <a href={el.code} target="_blank" rel="noopener noreferrer"><Github className={styles.icon} />Code</a>
+              <a href={el.html_url} target="_blank" rel="noopener noreferrer"><Github className={styles.icon} />Code</a>
               {el.homepage && (
                 <a href={el.homepage} target="_blank" rel="noopener noreferrer"><ExternalLink className={styles.icon} />Demo</a>
               )}
