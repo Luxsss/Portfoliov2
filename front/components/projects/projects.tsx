@@ -40,6 +40,9 @@ export default function Projects() {
       <div className={styles.grid}>
         {repos.map((el) => (
           <div key={el.id} className={styles.cardProjects}>
+            <div className={styles.imageOverlay}>
+
+            </div>
             <div className={styles.cardProjectsHeader}>
               <h4 className={styles.cardProjectsTitle}>{el.name}</h4>
               {el.language && (
@@ -50,9 +53,9 @@ export default function Projects() {
             <p className={styles.cardProjectsDesc}>{el.description || "No description provided."}</p>
 
             <div className={styles.cardProjectsLinks}>
-              <a href={el.code} target="_blank" rel="noopener noreferrer"><Github className={styles.icon} />Code</a>
+              <a href={el.code} target="_blank"><Github className={styles.icon} />Code</a>
               {el.homepage && (
-                <a href={el.homepage} target="_blank" rel="noopener noreferrer"><ExternalLink className={styles.icon} />Demo</a>
+                <a href={el.homepage} target="_blank"><ExternalLink className={styles.icon} />Demo</a>
               )}
             </div>
           </div>

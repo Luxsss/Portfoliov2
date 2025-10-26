@@ -36,18 +36,6 @@
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .cardProjects {
   background-color: #FCFCFB;
   border-radius: 15px;
@@ -146,5 +134,17 @@
   .cardProjectsLinks a {
     font-size: 0.75rem;
     padding: 5px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

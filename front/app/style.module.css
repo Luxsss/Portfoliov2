@@ -1,9 +1,8 @@
 .content {
-  margin-left: 18vw; /* Laisse de la place à la sidebar sur desktop */
+  margin-left: 18vw;
   transition: margin-left 0.3s ease;
 }
 
-/* Quand la navbar passe en burger (mobile), on supprime la marge */
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
